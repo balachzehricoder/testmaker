@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Ysabeau+Infant:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet" />
+    <!-- Swiper CSS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+    <script src="assets/js/gsap.js"></script>
+    
+    <!--PLUGIN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Custom CSS -->
+    <style>
+        .navbar {
+            transition: all 0.3s ease;
+        }
+        .navbar.transparent {
+            background-color: transparent;
+        }
+        .navbar.white {
+            background-color: white;
+        }
+        h1 {
+color: black; 
+}
+span{
+color: red
+}
+    </style>
+    
+
+</head>
+
+<body>
+
+
+  <!-- navbar and slider -->
+    <header class="text-gray-600 body-font sticky-header navbar transparent" id="navbar">
+        <div class="container mx-auto flex flex-wrap p-5 flex-row items-center justify-between">
+            <!-- Logo -->
+            <a class="flex title-font font-medium items-center text-gray-900">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl">Tailblocks</span>
+            </a>
+
+            <!-- Hamburger Icon -->
+            <button
+                class="inline-flex items-center md:hidden bg-gray-100 border-0 py-2 px-3 focus:outline-none hover:bg-gray-200 rounded"
+                id="nav-toggle">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                    <path d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+
+            <!-- Navbar Links -->
+            <nav id="nav-menu" class="hidden md:flex md:flex-row flex-col md:ml-auto items-center text-base">
+                <a href="index.html" class="block md:inline-block mr-5 hover:text-gray-900 py-2 md:py-0">Home</a>
+                <a href="freetriel" class="block md:inline-block mr-5 hover:text-gray-900 py-2 md:py-0">Free triel</a>
+                <a href="reviews" class="block md:inline-block mr-5 hover:text-gray-900 py-2 md:py-0">Testimonials</a>
+                <a href="price" class="block md:inline-block mr-5 hover:text-gray-900 py-2 md:py-0">Pricing</a>
+                <a href="price" class="block md:inline-block mr-5 hover:text-gray-900 py-2 md:py-0">registration</a>
+
+
+
+            </nav>
+
+            <!-- CTA Button -->
+            <button class="hidden md:inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base" style="background-color: red; color: black;">
+                Login
+                
+            </button>
+        </div>
+    </header>
+
+    <section class="slider">
+        <ul>
+            <li>
+                <article class="center-y padding_2x">
+                    <h3 class="big title"><span>Create Custom</span> Tests Effortlessly </h3>
+                    <p>with Our Comprehensive Test Making Platform</p>
+                    <a href="#about" class="btn btn_3">More about us</a>
+                </article>
+            </li>
+            <li>
+                <article class="center-y padding_2x">
+                    <h3 class="big title"><span>Enhance Learning with</span> Tailored Quizzes and Assessments</h3>
+                    <p>This emphasizes the personalized aspect of the tests while appealing to educators and institutions looking to create targeted assessments.</p>
+                </article>
+            </li>
+            <li>
+                <article class="center-y padding_2x">
+                    <h3 class="big title"><span>Track Progress and Performance</span> with Detailed Analytics</h3>
+                    <p>This highlights the feature of providing insightful data and analytics on student performance, which is crucial for both educators and learners.</p>
+                </article>
+            </li>
+            <aside>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </aside>
+        </ul>
+    </section>
+    <a href="#services" class="cs-down"></a>
+    <br><br>
+    
+    <script src="assets/js/script.js"></script>
+    <script>
+        // JavaScript to handle scroll and navbar class change
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            var navbar = document.getElementById("navbar");
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                navbar.classList.remove("transparent");
+                navbar.classList.add("white");
+            } else {
+                navbar.classList.remove("white");
+                navbar.classList.add("transparent");
+            }
+        }
+    </script>
+  <!-- navbar and slider end -->
